@@ -1,0 +1,19 @@
+/* AppLayout.module.css */
+.header {
+    /* Your header styles */
+}
+
+.contentLayout {
+    /* Your content layout styles */
+}
+
+.footer {
+    /* Your footer styles */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    /* background-color: blue; */
+}

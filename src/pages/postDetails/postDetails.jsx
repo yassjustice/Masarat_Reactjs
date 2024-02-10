@@ -1,10 +1,10 @@
 import React from 'react';
-
+import "./postDetailsStyle.css"
 const PostDetails = () => {
     return (
-       <>
-       Post Details works
-       </>
+       <p className="pew">
+        Post Details Works
+       </p>
     );
 }
 

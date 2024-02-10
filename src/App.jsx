@@ -1,6 +1,3 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AppLayout from "./layouts/appLayout/appLayout";
@@ -14,7 +11,7 @@ import PostDetails from "./pages/postDetails/postDetails";
 
 function App() {
     return (
-        <>
+        <div className={"app"}>
             <Router>
                 <Routes>
                     <Route path="/" element={<AppLayout />}>
@@ -29,7 +26,7 @@ function App() {
                     </Route>
                 </Routes>
             </Router>
-        </>
+        </div>
     );
 }
 
