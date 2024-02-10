@@ -8,6 +8,7 @@ import Login from "./pages/login/login";
 import Register from "./pages/register/register";
 import Results from "./pages/results/results";
 import PostDetails from "./pages/postDetails/postDetails";
+import ResultLayout from "./layouts/resultLayout/resultLayout";
 
 function App() {
     return (
@@ -15,14 +16,18 @@ function App() {
             <Router>
                 <Routes>
                     <Route path="/" element={<AppLayout />}>
-                        <Route index element={<Home />} />
-                        <Route path="/home" element={<Home />} />
-                        <Route path="/top" element={<TopPosts />} />
-                        <Route path="/allposts" element={<AllPosts />} />
+                        <Route index element={<Results />} />
+                        {/* <Route path="/home" element={<Home />} /> */}
                         <Route path="/login" element={<Login />} />
                         <Route path="/register" element={<Register />} />
-                        <Route path="/results" element={<Results />} />
                         <Route path="/postdetails" element={<PostDetails />} />
+                        <Route path="/results" element={<Results />} />
+                        <Route path="/top" element={<TopPosts />} />
+                        <Route path="/allposts" element={<AllPosts />} />
+                        <Route
+                            path="/resultLayout"
+                            element={<ResultLayout />}
+                        />
                     </Route>
                 </Routes>
             </Router>

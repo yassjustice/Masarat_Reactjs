@@ -5,6 +5,8 @@
 
 .contentLayout {
     /* Your content layout styles */
+    margin-top: 0px !important;
+    
 }
 
 .footer {
@@ -14,6 +16,5 @@
 .container {
     display: flex;
     flex-direction: column;
-
     /* background-color: blue; */
 }
